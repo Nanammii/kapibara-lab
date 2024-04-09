@@ -32,8 +32,6 @@
 body
   height: 100%
   min-width: 360px
-  display: flex
-  flex-direction: column
   margin: 0
   padding: 0
   font-family: Montserrat, sans-serif
@@ -42,4 +40,15 @@ body
   font-weight: 400
   color: #000000
   background-color: #ffffff
+  box-sizing: border-box
 
+.page
+  display: flex
+  flex-direction: column
+
+.container
+  padding: 0 18px
+
+  @media (min-width: 900px)
+    padding: 0 260px
+    max-width: 1920px

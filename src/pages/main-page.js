@@ -1,6 +1,14 @@
+import Header from "../components/header/header";
+import Intro from "../components/intro/intro";
+
 function MainPage() {
     return (
-        <div>gr</div>
+        <div className="page">
+            <Header />
+          <main>
+            <Intro />
+          </main>
+        </div>
     );
 }
 
