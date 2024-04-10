@@ -4,20 +4,37 @@ import Services from "../components/services/services";
 import Gallery from "../components/gallery/gallery";
 import Application from "../components/application/application";
 import Footer from "../components/footer/footer";
-import {useRef} from "react";
+import Modal from "../components/modal/modal";
+import {useRef, useState} from "react";
 
 function MainPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const ref = useRef(null);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  }
+
+  const handleModalCLose = () => {
+    setIsModalOpen(false);
+  }
+
+  const handleScrollClick = () => {
+    console.log(ref)
+    ref.current?.scrollIntoView({behavior: "smooth"});
+  }
 
   return (
     <div className="page">
       <Header />
       <main className="page__main">
         <Intro/>
-        <Services />
+        <Services onClick={handleScrollClick} />
         <Gallery />
-        <Application />
+        <Application onOpenModal={handleModalOpen} ref={ref} />
       </main>
       <Footer />
+      {isModalOpen && <Modal onModalClose={handleModalCLose} />}
     </div>
   );
 }

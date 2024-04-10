@@ -2,7 +2,7 @@ import "./gallery.sass";
 
 function Gallery(props) {
   return (
-    <section className="gallery container" id="gallery" >
+    <section className="gallery container" id={"gallery"}>
       <h2 className="gallery__title">Галерея</h2>
       <ul className="gallery__list">
         <li className="gallery__item">

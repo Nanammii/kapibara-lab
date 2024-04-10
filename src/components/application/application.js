@@ -1,7 +1,7 @@
 import "./application.sass";
-import {useState} from "react";
+import {useState, forwardRef} from "react";
 
-function Application(props) {
+function Application(props, ref) {
   const [valueInputs, setValueInput] = useState({
     surname: 'Мальцев',
     name: '',
@@ -11,11 +11,12 @@ function Application(props) {
   const handleFormSubmit = (evt) => {
     evt.preventDefault();
 
-    console.log(valueInputs)
+    console.log(valueInputs);
+    props.onOpenModal();
   };
 
   return (
-    <section className="application container" id="application" >
+    <section className="application container" id={"application"} ref={ref}>
       <div className="application__wrapper">
         <h2 className="application__title">Заявка <br/> на диагностику</h2>
         <p className="application__description">Доверьте свои медицинские исследования надежным капибарам-лаборантам и получите качественные результаты в кратчайшие сроки!</p>
@@ -53,4 +54,4 @@ function Application(props) {
   );
 }
 
-export default Application;
+export default forwardRef(Application);
