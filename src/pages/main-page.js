@@ -20,7 +20,6 @@ function MainPage() {
   }
 
   const handleScrollClick = () => {
-    console.log(ref)
     ref.current?.scrollIntoView({behavior: "smooth"});
   }
 

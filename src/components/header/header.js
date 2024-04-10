@@ -12,7 +12,6 @@ function Header(props) {
     });
   }
 
-
   return (
     <header className="header container">
       <div className="header__container">
