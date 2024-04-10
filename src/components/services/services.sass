@@ -1,0 +1,78 @@
+.services
+  display: flex
+  flex-direction: column
+  background: linear-gradient(0deg, #e9eaf9 0%, #f5f5ff 100%)
+
+  @media (min-width: 900px)
+    display: grid
+    grid-template-columns: 3fr 1fr
+    font-size: 21px
+    line-height: 29px
+
+.services__title
+  margin: 0
+  padding-bottom: 24px
+  padding-top: 36px
+  font-size: 28px
+  line-height: 34px
+  font-weight: 600
+  order: 1
+
+  @media (min-width: 900px)
+    padding-top: 50px
+    padding-bottom: 13px
+    font-size: 36px
+    line-height: 44px
+
+.services__description
+  display: flex
+  flex-direction: column
+  padding-top: 24px
+  padding-bottom: 24px
+  gap: 18px
+  order: 3
+
+  @media (min-width: 900px)
+    padding-right: 10px
+    padding-bottom: 34px
+
+.services__paragraph
+  margin: 0
+
+.services__image
+  min-height: 306px
+  border-radius: 8px
+  order: 2
+  object-fit: cover
+
+  @media (min-width: 900px)
+    width: 332px
+    height: 314px
+    align-self: center
+    justify-self: end
+    grid-column: 2/3
+    grid-row: 1/4
+    margin-bottom: 16px
+
+
+.services__button
+  position: relative
+  padding: 12px 52px 12px 18px
+  margin-bottom: 36px
+  align-self: start
+  order: 4
+
+  @media (min-width: 900px)
+    max-width: 249px
+    margin-bottom: 49px
+    font-size: 21px
+    line-height: 29px
+
+  &::after
+    content: ""
+    position: absolute
+    top: 12px
+    right: 18px
+    width: 24px
+    height: 24px
+    background: url("../../../public/img/arrow-icon.svg") no-repeat

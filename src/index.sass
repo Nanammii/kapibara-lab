@@ -1,32 +1,37 @@
 @font-face
-  font-family: 'Montserrat'
+  font-family: Montserrat
   font-style: normal
   font-weight: 400
   src: url('../public/fonts/Montserrat-Regular.woff2') format('woff2')
+  font-display: swap
 
 @font-face
-  font-family: 'Montserrat'
+  font-family: Montserrat
   font-style: normal
   font-weight: 500
   src: url('../public/fonts/Montserrat-Medium.woff2') format('woff2')
+  font-display: swap
 
 @font-face
-  font-family: 'Montserrat'
+  font-family: Montserrat
   font-style: normal
   font-weight: 600
   src: url('../public/fonts/Montserrat-SemiBold.woff2') format('woff2')
+  font-display: swap
 
 @font-face
-  font-family: 'Montserrat'
+  font-family: Montserrat
   font-style: normal
   font-weight: 700
   src: url('../public/fonts/Montserrat-Bold.woff2') format('woff2')
+  font-display: swap
 
 @font-face
-  font-family: 'Montserrat'
+  font-family: Montserrat
   font-style: normal
   font-weight: 800
   src: url('../public/fonts/Montserrat-ExtraBold.woff2') format('woff2')
+  font-display: swap
 
 
 body
@@ -34,7 +39,7 @@ body
   min-width: 360px
   margin: 0
   padding: 0
-  font-family: Montserrat, sans-serif
+  font-family: "Montserrat", sans-serif
   font-size: 18px
   line-height: 25px
   font-weight: 400
@@ -42,13 +47,37 @@ body
   background-color: #ffffff
   box-sizing: border-box
 
+*, ::after, ::before
+  box-sizing: inherit
+
 .page
   display: flex
   flex-direction: column
+
+.page__main
+  padding-bottom: 30px
+
+  @media (min-width: 900px)
+    padding-bottom: 96px
 
 .container
   padding: 0 18px
 
   @media (min-width: 900px)
-    padding: 0 260px
+    padding: 0 120px
     max-width: 1920px
+
+  @media (min-width: 1440px)
+    padding: 0 260px
+
+
+.button
+  padding: 0
+  border: none
+  border-radius: 8px
+  color: #ffffff
+  background-color: #737be1
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+  cursor: pointer

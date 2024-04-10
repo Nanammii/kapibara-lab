@@ -1,0 +1,91 @@
+.application
+  background: linear-gradient(0deg, #e9eaf9 0%, #f5f5ff 100%)
+
+  @media (min-width: 900px)
+    background: #ffffff
+    font-size: 21px
+    line-height: 29px
+
+.application__wrapper
+  padding: 36px 0
+
+  @media (min-width: 900px)
+    padding: 48px 0
+    border-radius: 8px
+    text-align: center
+    background: linear-gradient(0deg, #e9eaf9 0%, #f5f5ff 100%)
+
+.application__title
+  margin: 0
+  padding-bottom: 36px
+  font-size: 28px
+  line-height: 34px
+  font-weight: 600
+
+  br
+    display: inline-block
+
+    @media (min-width: 900px)
+      display: none
+
+  @media (min-width: 900px)
+    font-size: 36px
+    line-height: 44px
+    padding-bottom: 50px
+
+.application__description
+  margin: 0
+  padding-bottom: 36px
+
+  @media (min-width: 900px)
+    padding: 0 190px 47px
+
+.application__form-group
+  margin: 0
+  padding: 0 0 36px
+  border: none
+  display: flex
+  flex-direction: column
+  gap: 18px
+
+  @media (min-width: 900px)
+    padding-inline: 20px
+
+  @media (min-width: 1400px)
+    flex-direction: row
+    justify-content: center
+    padding-bottom: 48px
+
+.application__form-input
+  padding: 10px 16px
+  border: 2px solid #ffffff
+  border-radius: 8px
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+
+  @media (min-width: 1400px)
+    max-width: 280px
+
+  &::placeholder
+    color: #a0a0a0
+
+  &:active,
+  &:focus
+    border-color: #737be1
+
+  &:invalid
+    border-color: #e17373
+
+.application__button
+  position: relative
+  padding: 12px 52px 12px 18px
+
+  &::after
+    content: ""
+    position: absolute
+    top: 12px
+    right: 18px
+    width: 24px
+    height: 24px
+    background: url("../../../public/img/checkmark-icon.svg") no-repeat
