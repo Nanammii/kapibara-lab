@@ -16,7 +16,7 @@ function Header(props) {
     <header className="header container">
       <div className="header__container">
         <a className="header__link" href="#">
-          <img className="header__logo" src="../img/logo.svg" alt="Логотип сайта" width="194" height="29"/>
+          <img className="header__logo" src="./img/logo.svg" alt="Логотип сайта" width="194" height="29"/>
           <span className="header__logo-text">Современные методики диагностики</span>
         </a>
         <ul className="header__navigation-list" onClick={handleClick}>
@@ -31,7 +31,7 @@ function Header(props) {
           </li>
         </ul>
         <a className="header__phone" href="#">
-          <img className="header__icon-phone" src="../img/phone-icon.svg" alt="Наш телефон"/>
+          <img className="header__icon-phone" src="./img/phone-icon.svg" alt="Наш телефон"/>
           <div className="header__phone-wrapper">
             <span className="header__phone-number">+7 123 456 7890</span>
             <span className="header__phone-text">Звонок бесплатный</span>

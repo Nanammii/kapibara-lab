@@ -11,7 +11,7 @@ function Services({onClick}) {
         <p className="services__paragraph">Мы используем современное оборудование и методики и гарантируем точность и надежность результатов.</p>
       </div>
       <button className="services__button button" onClick={onClick}>Оставить заявку</button>
-      <img className="services__image" src="../img/servises-photo.png" alt="Лаборатория"/>
+      <img className="services__image" src="./img/servises-photo.png" alt="Лаборатория"/>
     </section>
   );
 }
